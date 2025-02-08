@@ -245,6 +245,7 @@ body {
 }
 .question-count-input {
   border: 2px solid #ed86a5;
+  outline: none;
 }
 .question-count-input:focus {
   border-color: #ed86a5; 
