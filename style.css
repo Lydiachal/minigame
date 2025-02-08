@@ -244,5 +244,8 @@ body {
     font-weight: bold;
 }
 .question-count-input {
-  border: 2px solid pink;
+  border: 2px solid #ed86a5;
+}
+.question-count-input:focus {
+  border-color: #ed86a5; 
 }
