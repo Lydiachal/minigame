@@ -243,3 +243,6 @@ body {
     font-size: 1.1rem;
     font-weight: bold;
 }
+.question-count-input {
+  border: 2px solid pink;
+}
