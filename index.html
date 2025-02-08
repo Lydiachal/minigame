@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Game</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="javascript/questions.js" defer></script>
+    <script src="javascript/script.js" defer></script>
+</head>
+<body>
+    <div class="config-container">
+        <h2 class="config-title">Quiz Game</h2>
+        <div class="config-option">
+            <h4 class="option-title">Choisir une Categorie</h4>
+            <div class="category-options">
+                <button class="category-option">Science</button>
+                <button class="category-option">Histoire</button>
+                <button class="category-option">Geographie</button>
+                <button class="category-option">Culture Génerale</button>
+            </div>
+            <h4 class="option-title">Nombre de Questions</h4>
+            <input type="number" class="question-count-input" min="1" max="35" value="15">
+        </div>
+        
+        <div class="error-message" ></div>
+        
+        <button class="start-quiz-button">Commencer</button>
+    </div>
+    
+    <div class="display-container ">
+        <div class="header">
+            <div class="number-of-count">
+                <span class="number-of-question"></span>
+            </div> 
+            <div class="timer">
+                <img src="icon.png" alt="Timer" width="20px">
+                <span class="time-left">10s</span>
+            </div>
+        </div>
+        
+        <div class="quiz-content">
+            <h2 class="question-text">Question</h2>
+            <ul class="answer-options"></ul>
+        </div>
+        
+        <button class="next-button">Next</button>
+    </div>
+    
+    <div class="score-container ">
+        <h3 class="score-title">Quiz completed</h3>
+        <div class="user-score">Demo Score</div>
+        <div class= "score-comment" ></div>
+        <button class="restart-button">Rejouer</button>
+    </div>
+</body>
+</html>

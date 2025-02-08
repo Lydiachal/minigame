@@ -1,0 +1,245 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #631b4c;
+    padding: 20px;
+}
+
+
+.config-container {
+    width: 100%;
+    max-width: 450px;
+    padding: 25px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    text-align: center;
+}
+
+
+.config-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #0c0b0b;
+    margin-bottom: 20px;
+}
+
+
+.config-option {
+    margin-top: 20px;
+}
+
+
+.option-title {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #0b0a0a;
+    margin-bottom: 15px;
+}
+
+
+.category-options {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+
+.category-option {
+    padding: 12px;
+    font-size: 1rem;
+    font-weight: 500;
+    background: #f9f9f9;
+    border: 2px solid #df6b99;
+    border-radius: 8px;
+    color: #0b0b0b;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+
+.category-option:hover,
+.category-option.selected {
+    background: #ed86a5;
+    color: #fff;
+    border-color: #ed86a5;
+}
+
+
+.start-quiz-button {
+    width: 300;
+    padding: 15px;
+    font-size: 1rem;
+    font-weight: 500;
+    background: #ed86a5;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    margin-top: 20px;
+}
+
+.start-quiz-button:hover {
+    background: #d57491;
+}
+
+
+.display-container {
+    display: none;
+    width: 450px;
+    height: 510px;
+    padding: 25px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    text-align: center;
+}
+
+.display-container .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.8em;
+    padding-bottom: 0.6em;
+    border-bottom: 2px solid #ed86a5;
+}
+
+.number-of-count {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #0c0c0c;
+    text-align: left;
+}
+
+.timer {
+    background-color: #ed86a5;
+    width: 6em;
+    border-radius: 1.8em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.7em 1.8em;
+}
+
+.timer img {
+    width: 20px;
+    height: 20px;
+}
+
+.quiz-content .question-text {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.quiz-content .answer-options {
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+    list-style: none;
+    margin-top: 20px;
+}
+
+.answer-option {
+    padding: 13px 16px;
+    background: #F3F1FF;
+    border-radius: 6px;
+    font-weight: 500;
+    cursor: pointer;
+    border: 1px solid #ed86a5;
+    transition: 0.3s ease;
+}
+
+.answer-option:hover {
+    background: #ed86a5;
+}
+
+.answer-option.correct {
+    border-color: #B7E1C1;
+    background-color: #D4EDDA;
+    color: #155724;
+}
+
+.answer-option.incorrect {
+    border-color: #F4BEC3;
+    background-color: #F8D7DA;
+    color: #721C24;
+}
+
+
+.next-button{
+    padding: 0.7em 1.8em;
+    font-size: 1rem;
+    background: #ed86a5;
+    color: #fff;
+    border-radius: 0.3em;
+    border: none;
+    cursor: pointer;
+    float: right;
+    margin-top: 20px;
+    transition: background 0.3s ease;
+    
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+.next-button:hover {
+    background: #d57491;
+}
+
+.score-container {
+    display: none;
+    width: 100%;
+    max-width: 450px;
+    padding: 25px;
+    background: #fff;
+    border-radius: 12px;
+    
+    text-align: center;
+}
+
+.restart-button {
+    width: 250;
+    padding: 15px;
+    font-size: 1rem;
+    font-weight: 500;
+    background: #ed86a5;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    margin-top: 20px;
+}
+
+.restart-button:hover {
+    background: #ed86a5;
+}
+.score-title{
+    margin-bottom: 15px;
+
+}
+.user-score{
+    margin-bottom: 10px;
+}
+.score-comment {
+    margin-bottom: 10px; 
+}
+.error-message {
+    color: red;
+    display: none;
+    text-align: center;
+    margin-top: 20px; 
+    font-size: 1.1rem;
+    font-weight: bold;
+}
