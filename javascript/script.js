@@ -8,7 +8,7 @@ let timerLeft = 15;
 let totalquestions=0;
 const resettimer = () => {
     clearInterval(timer);
-    timerLeft = 10;
+    timerLeft = 15;
     timeLeft.textContent = `${timerLeft}s`;
 };
 
