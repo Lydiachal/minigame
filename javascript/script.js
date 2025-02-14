@@ -4,7 +4,7 @@ let timeLeft = document.querySelector(".time-left");
 let questionCounter = 0;
 
 let timer = null;
-let timerLeft = 10;
+let timerLeft = 15;
 let totalquestions=0;
 const resettimer = () => {
     clearInterval(timer);
